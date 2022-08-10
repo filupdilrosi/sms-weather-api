@@ -3,8 +3,8 @@ from twilio.rest import Client
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
 api_key = "b239ad6816f4e09d41069588e7ac2d80"
-account_sid = "AC3585ff852a3397fae134d446aa30915c"
-auth_token = "7c0f59b1d84a06d74a56e89415987212"
+account_sid = ""
+auth_token = ""
 
 weather_parameters = {
     "lat": 33.753746,
@@ -32,8 +32,8 @@ if will_rain:
         .create(
         body="It is going to rain today in Atlanta, remember to bring an umbrella.",
 
-        from_='+19064482243',
-        to='+16789070045'
+        from_='',
+        to=''
     )
 
 # |The code below was my initial solution that did not use list slicing|
